@@ -1,4 +1,4 @@
-## Laravel 4 with Sentry 2 - Version 2.0
+## Laravel 4.2 with Sentry 2 + Asset PipeLine Version 1.0.
 This is a fork of [L4withSentry](https://github.com/rydurham/L4withSentry) upgraded to Laravel 4.2 with full support for Mailgun/Mandrill driver methods of sending email (added Guzzle to composer), and with Codesleeve Asset Pipeline fully integrated as well.
 
 This is a demo of [Sentry 2](https://github.com/cartalyst/sentry) integrated with [Laravel 4](https://github.com/laravel/laravel/tree/develop) and [Bootstrap 3.0](http://getbootstrap.com).  This repo is intended to be for reference only - if you want to use this code in your own app I suggest using [Sentinel](https://github.com/rydurham/Sentinel) - a laravel pacakge based on this repo.  
@@ -51,7 +51,13 @@ __Users__
 * Tests are currently very limited.  
 
 ### History
-Version 2.0 has been completely revamped using strategies suggested in *Laravel: From Apprentice to Artisan* by Taylor Otwell, *Implementing Laravel* by Chris Fidao and the Laracast videos.   Version 1.0 still exists in its original version. 
-
+Version 1.0 : 
+- Forked [L4withSentry](https://github.com/rydurham/L4withSentry), 
+- added [AssetPipeline](https://github.com/CodeSleeve/asset-pipeline#introduction-to-directives), 
+- upgraded to Laravel 4.2, 
+- added Guzzle for mail drivers support (Mailgun/Mandrill), 
+- modified Sentry model from 'Cartalyst\Sentry\Users\Eloquent\User', to 'User' for easier customization.
+- modified database.php to use SQLite_dev for faster startup of testapp. 
+- moved all public files to asset pipeline.
 =======
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
