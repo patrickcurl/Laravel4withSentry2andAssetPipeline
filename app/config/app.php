@@ -14,7 +14,7 @@ return array(
 	*/
 
 	'debug' => true,
-
+	'cipher' => MCRYPT_RIJNDAEL_128,
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -106,10 +106,10 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Cartalyst\Sentry\SentryServiceProvider',
-		'Authority\Repo\RepoServiceProvider',
-		'Authority\Service\Form\FormServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
+	'Cartalyst\Sentry\SentryServiceProvider',
+	'Authority\Repo\RepoServiceProvider',
+	'Authority\Service\Form\FormServiceProvider',
+	'Way\Generators\GeneratorsServiceProvider',
 
 	),
 
@@ -139,7 +139,7 @@ return array(
 
 	'aliases' => array(
 
-		'App' 			=> 'Illuminate\Support\Facades\App',
+	'App' 			=> 'Illuminate\Support\Facades\App',
         'Artisan' 		=> 'Illuminate\Support\Facades\Artisan',
         'Auth' 			=> 'Illuminate\Support\Facades\Auth',
         'Blade' 		=> 'Illuminate\Support\Facades\Blade',
@@ -176,7 +176,7 @@ return array(
         'URL' 			=> 'Illuminate\Support\Facades\URL',
         'Validator' 	=> 'Illuminate\Support\Facades\Validator',
         'View' 			=> 'Illuminate\Support\Facades\View',
-		'Sentry'		=> 'Cartalyst\Sentry\Facades\Laravel\Sentry'
+	'Sentry'		=> 'Cartalyst\Sentry\Facades\Laravel\Sentry'
 
 	),
 
