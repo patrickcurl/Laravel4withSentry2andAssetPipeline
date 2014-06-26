@@ -1,4 +1,5 @@
 ## Laravel 4 with Sentry 2 - Version 2.0
+This is a fork of [L4withSentry](https://github.com/rydurham/L4withSentry) upgraded to Laravel 4.2 with full support for Mailgun/Mandrill driver methods of sending email (added Guzzle to composer), and with Codesleeve Asset Pipeline fully integrated as well.
 
 This is a demo of [Sentry 2](https://github.com/cartalyst/sentry) integrated with [Laravel 4](https://github.com/laravel/laravel/tree/develop) and [Bootstrap 3.0](http://getbootstrap.com).  This repo is intended to be for reference only - if you want to use this code in your own app I suggest using [Sentinel](https://github.com/rydurham/Sentinel) - a laravel pacakge based on this repo.  
 
@@ -12,6 +13,14 @@ Before you begin, make sure you have both ```git``` and ```composer``` installed
 4. Edit ```app/config/mail.php``` to work with your mail setup.
 5. Run the migrations: ```php artisan migrate```
 6. Seed the Database: ```php artisan db:seed```
+7. For asset-pipeline to work edit ```bootstrap/start.php```
+
+	$env = $app->detectEnvironment(array(
+    	'local' => array('your-machine-name'),
+  	));
+
+### Database
+The Default DB is setup to use SQLite for testing as its the fastest way to get a testapp up and running.
 
 ### Seeds
 The seeds in this repo will create two groups and two user accounts.

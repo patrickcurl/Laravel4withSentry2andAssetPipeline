@@ -106,11 +106,11 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
-	'Cartalyst\Sentry\SentryServiceProvider',
-	'Authority\Repo\RepoServiceProvider',
-	'Authority\Service\Form\FormServiceProvider',
-	'Way\Generators\GeneratorsServiceProvider',
-
+		'Cartalyst\Sentry\SentryServiceProvider',
+		'Authority\Repo\RepoServiceProvider',
+		'Authority\Service\Form\FormServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
+		'Codesleeve\AssetPipeline\AssetPipelineServiceProvider',
 	),
 
 	/*

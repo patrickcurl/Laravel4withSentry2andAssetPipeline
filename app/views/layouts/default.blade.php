@@ -9,14 +9,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Bootstrap 3.0: Latest compiled and minified CSS -->
-		<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
-		<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-
-		<!-- Optional theme -->
-		<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"> -->
-		<link rel="stylesheet" href="{{ asset('css/bootstrap-theme.min.css') }}">
-
+	
+		<?= stylesheet_link_tag() ?>
+		
 		<style>
 		@section('styles')
 			body {
@@ -83,9 +78,6 @@
 
 		<!-- Javascripts
 		================================================== -->
-		<script src="{{ asset('js/jquery-2.0.2.min.js') }}"></script>
-		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('js/restfulizer.js') }}"></script> 
-		<!-- Thanks to Zizaco for the Restfulizer script.  http://zizaco.net  -->
+		<?= javascript_include_tag() ?>
 	</body>
 </html>

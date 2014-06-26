@@ -1,9 +1,11 @@
 <?php
 
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableInterface;
+// use Illuminate\Auth\UserInterface;
+use Cartalyst\Sentry\Users\UserInterface;
+//use Illuminate\Auth\Reminders\RemindableInterface;
 
-class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterface, RemindableInterface {
+// class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterface, RemindableInterface {
+class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterface {
 
 	/**
 	 * The database table used by the model.
