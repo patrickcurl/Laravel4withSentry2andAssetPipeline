@@ -14,7 +14,7 @@ return array(
 	*/
 
 	'debug' => true,
-	'cipher' => MCRYPT_RIJNDAEL_128,
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -66,7 +66,7 @@ return array(
 	*/
 
 	'key' => 'nkBlz8KjTZ3AfiWD6Vl4Gm9gERWayz9m',
-
+	'cipher' => MCRYPT_RIJNDAEL_128,
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
